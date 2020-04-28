@@ -51,7 +51,7 @@ When the `Processor` instance is initialized, Sclera first checks the sanity of 
 
 - Creates and initializes an instance of Sclera [`Processor`](https://www.scleradb.com/api/sclera-core/com/scleradb/exec/Processor.html)
 - For each query in the list passed as the parameter,
-    - Executes the query using the `Processor` instance, getting the result as an instance of type [`TableResult`](https://www.scleradb.com/api/sclera-core/com/scleradb/sql/result/TableResult.html). This result contains the column list (of type [`Column`](https://www.scleradb.com/api/sclera-core/com/scleradb/sql/datatypes/Column.html) and an iterator over rows of type [`TableRow`](https://www.scleradb.com/api/sclera-core/com/scleradb/sql/result/TableRow.html).
+    - Executes the query using the `Processor` instance, getting the result as an instance of type [`TableResult`](https://www.scleradb.com/api/sclera-core/com/scleradb/sql/result/TableResult.html), containing an iterator over the returned rows and the metadata for the row columns. The rows are of type [`TableRow`](https://www.scleradb.com/api/sclera-core/com/scleradb/sql/result/TableRow.html), and the metadata is a list of instances of type [`Column`](https://www.scleradb.com/api/sclera-core/com/scleradb/sql/datatypes/Column.html).
     - Output the column names, followed by the result values one row at a time.
 
 ## Executable Script
