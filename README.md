@@ -1,6 +1,6 @@
 # Sclera - Proprietary API Example
 
-This example application shows how an application can interface with Sclera using [Sclera's proprietary API](https://www.scleradb.com/api/sclera-core/).
+This example application shows how an application can interface with Sclera using [Sclera's proprietary API](https://www.scleradb.com/api/sclera-core/com/scleradb/exec/Processor.html).
 
 To use Sclera through the proprietary API, the application needs to:
 
